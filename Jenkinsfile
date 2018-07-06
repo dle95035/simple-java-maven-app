@@ -13,6 +13,7 @@ node ('worker_node1') {
     }
     
     stage('Results') {
+		echo "Hello world, I am now qualifying for Jenkins..."
       junit '**/target/surefire-reports/TEST-*.xml'
       archive 'target/*.jar'
    }
