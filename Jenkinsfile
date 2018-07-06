@@ -13,7 +13,6 @@ node ('worker_node1') {
     }
     
     stage('Results') {
-	  echo I am unit testing...
       junit '**/target/surefire-reports/TEST-*.xml'
       archive 'target/*.jar'
    }
